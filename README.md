@@ -1,2 +1,3 @@
-# Execute-SQL-with-powershell-
-Use powershell to run SQL remotely
+# Execute SQL with powershell
+
+ Use powershell to run SQL remotely
