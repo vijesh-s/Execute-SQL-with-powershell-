@@ -35,6 +35,11 @@ Make sure ExecuteSql.ps1 exists in the same directory
 . ".\RunSql.ps1"
 
 $inputSqlFile = read-host "Enter the SQL file name"
+if (-Not ($inputSqlFile -Like "*.sql"))
+{
+    Write-Host "Please enter a sql file."
+    return
+}
 $SqlServerInstance = read-host "Enter the SqlServer Intance"
 $DbName = read-host "Enter the Database name"
 $useWindowsAuth = read-host "Do you want to use Windows Authentication, y or n?"
